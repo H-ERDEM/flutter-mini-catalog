@@ -12,7 +12,7 @@ Yazılım stajı kapsamında geliştirilen, ürünlerin JSON verisinden dinamik 
 
 | Ana Sayfa | Ürün Detay | Sepet Sayfası |
 | :---: | :---: | :---: |
-| ![Ana Sayfa](img/home_screen.png) | ![Ürün Detay](img/detail_screen.png) | ![Sepet Sayfası](img/cart_screen.png) |
+| ![Ana Sayfa](img/Screenshot_20260620_222856.png) | ![Ürün Detay](img/Screenshot_20260620_222911.png) | ![Sepet Sayfası](img/Screenshot_20260620_222927.png) |
 
 ---
 
@@ -85,7 +85,7 @@ flutter run
    ```bash
    git init
    git add .
-   git commit -m "first commit: Mini Katalog Uygulaması Projesi"
+   git commit -m "feat: Mini Katalog Uygulaması tamamlandı"
    git branch -M main
    git remote add origin https://github.com/H-ERDEM/flutter-mini-catalog.git
    git push -u origin main
@@ -102,7 +102,7 @@ A professional Flutter mobile catalog application developed as part of a softwar
 
 | Home Screen | Product Detail | Cart Screen |
 | :---: | :---: | :---: |
-| ![Home Screen](img/home_screen.png) | ![Product Detail](img/detail_screen.png) | ![Cart Screen](img/cart_screen.png) |
+| ![Home Screen](img/Screenshot_20260620_222856.png) | ![Product Detail](img/Screenshot_20260620_222911.png) | ![Cart Screen](img/Screenshot_20260620_222927.png) |
 
 ---
 
@@ -175,9 +175,8 @@ flutter run
    ```bash
    git init
    git add .
-   git commit -m "first commit: Mini Catalog App Project"
+   git commit -m "feat: Mini Catalog App project completed"
    git branch -M main
    git remote add origin https://github.com/H-ERDEM/flutter-mini-catalog.git
    git push -u origin main
    ```
-# flutter-mini-catalog
