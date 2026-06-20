@@ -18,22 +18,61 @@ Yazılım stajı kapsamında geliştirilen, ürünlerin JSON verisinden dinamik 
 
 ### 🚀 Kullanılan Teknolojiler
 
-*   **Flutter & Dart**: Cross-platform mobil uygulama geliştirme ve güçlü tip güvenliği.
-*   **Material Design 3**: Google'ın en güncel tasarım dili ile modern bileşenler.
-*   **Google Fonts (Poppins)**: Okunaklı ve estetik tipografi.
-*   **JSON Serialization**: Verilerin asenkron olarak yerel JSON dosyasından çekilmesi ve modellenmesi.
-*   **State Management (setState)**: Uygulama içi dinamik sepet güncellemeleri için temiz state yönetimi.
+Bu proje, modern mobil uygulama geliştirme standartlarına uygun olarak aşağıdaki teknolojilerle inşa edilmiştir:
+
+*   **Flutter (Sürüm: 3.x.x Stable)**: Google'ın cross-platform mobil uygulama geliştirme framework'ü.
+*   **Dart (Sürüm: 3.x.x)**: Null-safety destekli, güçlü tip güvenliğine sahip programlama dili.
+*   **Material Design 3**: Google'ın en güncel tasarım dili ile modern ve estetik bileşenler.
+*   **Google Fonts (Poppins)**: Okunaklılık ve profesyonel görünüm için tercih edilen tipografi.
+*   **JSON Serialization**: Verilerin yerel bir `products.json` dosyasından asenkron olarak çekilip modellenmesi.
+*   **State Management (setState)**: Uygulama içi dinamik güncellemeler için temiz durum yönetimi.
 
 ---
 
-### ✨ Özellikler
+### ✨ Uygulama Özellikleri
 
-*   **Dinamik Ürün Listeleme**: 30'dan fazla teknolojik ürünün `GridView.builder` ile performanslı listelenmesi.
-*   **Gelişmiş Arama & Filtreleme**: `TextField` üzerinden ürün başlıklarına göre anlık arama yapabilme.
-*   **Sliver Mimarisi**: `SliverAppBar` ve esnek kaydırma efektleri ile profesyonel kullanıcı deneyimi.
-*   **Gelişmiş Navigasyon**: `Navigator.pushNamed` ve `Route Arguments` ile sayfalar arası güvenli veri iletimi.
-*   **Tam Fonksiyonel Sepet**: Ürün ekleme, silme, toplam tutar hesaplama ve "Satın Al" simülasyonu.
-*   **Responsive Tasarım**: Farklı ekran boyutları ve yönelimlerine tam uyumlu arayüz.
+#### 🏠 Ana Sayfa
+*   **Ürün Listeleme**: Modern kart yapısında estetik görünüm.
+*   **Arama Kutusu**: Ürün başlıklarına göre anlık filtreleme.
+*   **Banner Alanı**: Kampanyaların sergilendiği gradyan geçişli görsel alan.
+*   **GridView Görünümü**: Düzenli ve responsive ızgara yapısı.
+
+#### 📦 Ürün Listeleme
+*   **GridView.builder**: Yüksek performanslı ve verimli liste yönetimi.
+*   **Dinamik Veri Yükleme**: JSON formatındaki verilerin modele aktarımı.
+*   **Kart Tabanlı Tasarım**: Yuvarlatılmış köşeler ve gölgelendirme efektleri.
+
+#### 🔍 Arama Özelliği
+*   **Gerçek Zamanlı Filtreleme**: Kullanıcı yazdıkça anlık güncellenen liste.
+*   **Ürün Adına Göre Arama**: Aranan ürüne hızlı ve kolay erişim.
+
+#### 📄 Ürün Detay Sayfası
+*   **Büyük Ürün Görseli**: Ürünü detaylı inceleme imkanı.
+*   **Ürün Açıklaması**: Detaylı bilgi metni.
+*   **Fiyat ve Kategori Bilgisi**: Ürüne ait spesifik bilgilerin estetik sunumu.
+*   **Sepete Ekleme İşlemi**: Tek tıkla ürün ekleme ve SnackBar bildirimi.
+
+#### 🛒 Sepet Sistemi
+*   **Ürün Ekleme**: Seçilen ürünlerin sepete aktarılması.
+*   **Ürün Silme**: Sepetteki ürünlerin kolayca kaldırılması.
+*   **Toplam Fiyat Hesaplama**: Toplam tutarın anlık olarak hesaplanması.
+*   **Satın Alma Simülasyonu**: "Satın Al" butonu ile başarılı işlem bildirimi.
+
+---
+
+### 🎓 Eğitim Kapsamında Kazanımlar
+
+Bu proje sonunda aşağıdaki teknik ve pratik yetkinlikler elde edilmiştir:
+
+*   Flutter mimarisini ve çalışma prensiplerini anlama.
+*   Widget ağacı (Widget Tree) mantığını kavrama.
+*   Stateless ve Stateful widget'ların verimli kullanımı.
+*   JSON veri modelleme ve **factory** (fromJson/toJson) yapıları.
+*   GridView ile responsive listeleme teknikleri.
+*   Navigator kullanımı ve **Route Arguments** ile veri taşıma.
+*   Temel state yönetimi ve yaşam döngüsü kontrolü.
+*   Asset (görsel, json) yönetimi ve klasörleme mantığı.
+*   Modern Mobil UI/UX tasarımı uygulama.
 
 ---
 
@@ -41,142 +80,73 @@ Yazılım stajı kapsamında geliştirilen, ürünlerin JSON verisinden dinamik 
 
 ```text
 lib/
-├── main.dart                 # Uygulama ve Tema ayarları, Rotalar
+├── main.dart                 # Uygulama ayarları, Tema ve Rotalar
 ├── models/
-│    └── product.dart         # Ürün veri modeli (fromJson/toJson)
+│    └── product.dart         # Ürün veri modeli
 ├── data/
-│    └── product_data.dart    # JSON yükleme servisi ve Sepet verisi
+│    └── product_data.dart    # JSON servisleri ve global sepet yönetimi
 ├── screens/
-│    ├── home_screen.dart     # Liste, Banner ve Arama ekranı (Sliver yapısı)
-│    ├── product_detail_screen.dart # Detay bilgileri ve Sepete Ekleme
-│    └── cart_screen.dart     # Sepet yönetim ve Ödeme simülasyonu
+│    ├── home_screen.dart     # Liste ve Arama (Sliver mimarisi)
+│    ├── product_detail_screen.dart # Detay bilgileri
+│    └── cart_screen.dart     # Sepet ve Ödeme ekranı
 ├── widgets/
-│    ├── product_card.dart    # Modern ürün kartı bileşeni
-│    └── search_bar_widget.dart # Özelleştirilmiş arama çubuğu
+│    ├── product_card.dart    # Grid kart bileşeni
+│    └── search_bar_widget.dart # Arama bileşeni
 └── assets/
-     └── products.json        # 30+ Teknoloji ürünü içeren veri seti
+     └── products.json        # 30+ ürünlük veri seti
 ```
 
 ---
 
-### 🛠️ Kurulum ve Lokal Çalıştırma
+### 🛠️ Kurulum
 
-Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları sırasıyla uygulayınız:
-
-#### 1. Bağımlılıkları Yükleyin
+#### 1. Bağımlılıkları Yükle
 Terminalde proje ana dizinine gidin ve şu komutu çalıştırın:
 ```bash
 flutter pub get
 ```
 
-#### 2. Uygulamayı Başlatın
-Uygulamayı bir emülatörde veya gerçek cihazda çalıştırmak için:
+#### 2. Uygulamayı Çalıştır
 ```bash
 flutter run
 ```
+*Belirli bir cihaz/emülatör için:* `flutter run -d emulator-5554`
 
 ---
 
-### 🌐 GitHub Yayına Alma Adımları
+### 📂 GitHub Repository
 
-#### GitHub'a Yükleme Adımları:
-1. GitHub profilinizde yeni bir depo (repository) oluşturun.
-2. Bilgisayarınızdaki proje klasöründe terminali açıp sırasıyla şu komutları çalıştırın:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: Mini Katalog Uygulaması tamamlandı"
-   git branch -M main
-   git remote add origin https://github.com/H-ERDEM/flutter-mini-catalog.git
-   git push -u origin main
-   ```
+Proje, GitHub üzerinde paylaşılmak üzere tam dökümantasyonla hazırlanmıştır.
+**Repository İçeriği:** Kaynak kodlar, README.md, Ekran görüntüleri (img/) ve Asset dosyaları.
+
+---
+
+### 📋 Proje Çıktıları
+
+✅ Çalışan Mini Katalog Uygulaması
+✅ Ana Sayfa & GridView Tabanlı Tasarım
+✅ Ürün Listeleme & Detay Sayfası
+✅ Navigator & Route Arguments Kullanımı
+✅ JSON Veri Modelleme & Asset Yönetimi
+✅ Canlı Arama & Filtreleme
+✅ Tam Fonksiyonel Sepet & State Yönetimi
 
 ---
 ---
 
 ## 🇺🇸 English
 
-A professional Flutter mobile catalog application developed as part of a software internship, featuring dynamic data loading from JSON, a modern interface, and full shopping cart functionality.
+A professional Flutter mobile catalog application featuring dynamic data loading from JSON, Material 3 design, and a fully functional cart system.
 
-### 📸 Screenshots
+### 🚀 Technologies
+*   **Flutter (3.x.x Stable)**: Google's cross-platform framework.
+*   **JSON Serialization**: Async data fetching and modeling.
+*   **Sliver Architecture**: Fluid and professional scrolling experience.
 
-| Home Screen | Product Detail | Cart Screen |
-| :---: | :---: | :---: |
-| ![Home Screen](img/Screenshot_20260620_222856.png) | ![Product Detail](img/Screenshot_20260620_222911.png) | ![Cart Screen](img/Screenshot_20260620_222927.png) |
+### ✨ Key Features
+*   **Home Screen**: Instant search, dynamic banner, and responsive grid listing.
+*   **Cart System**: Item management, real-time total price calculation, and checkout simulation.
 
----
-
-### 🚀 Technologies Used
-
-*   **Flutter & Dart**: Cross-platform mobile development with strong type safety.
-*   **Material Design 3**: Modern UI components using Google's latest design language.
-*   **Google Fonts (Poppins)**: Aesthetic and readable typography.
-*   **JSON Serialization**: Asynchronous data fetching and modeling from local storage.
-*   **State Management (setState)**: Clean state handling for real-time cart updates.
-
----
-
-### ✨ Features
-
-*   **Dynamic Product Listing**: High-performance listing of 30+ tech products using `GridView.builder`.
-*   **Advanced Search**: Real-time filtering based on product titles.
-*   **Sliver Architecture**: Professional user experience with `SliverAppBar` and fluid scroll effects.
-*   **Advanced Navigation**: Secure data passing between screens via `Navigator.pushNamed` and `Route Arguments`.
-*   **Functional Cart**: Add/remove items, real-time total calculation, and "Purchase" simulation.
-*   **Responsive UI**: Fully adaptive for various screen sizes and orientations.
-
----
-
-### 📁 Project Folder Structure
-
-```text
-lib/
-├── main.dart                 # App configurations, Theme, and Routes
-├── models/
-│    └── product.dart         # Product data model (fromJson/toJson)
-├── data/
-│    └── product_data.dart    # JSON service and global Cart state
-├── screens/
-│    ├── home_screen.dart     # List, Banner, and Search (Sliver structure)
-│    ├── product_detail_screen.dart # Detailed info and Add to Cart logic
-│    └── cart_screen.dart     # Cart management and Checkout simulation
-├── widgets/
-│    ├── product_card.dart    # Modern product card component
-│    └── search_bar_widget.dart # Custom search input widget
-└── assets/
-     └── products.json        # Dataset containing 30+ tech products
-```
-
----
-
-### 🛠️ Installation & Local Setup
-
-Follow these steps to run the application locally on your machine:
-
-#### 1. Install Dependencies
-Navigate to the project root directory and run:
-```bash
-flutter pub get
-```
-
-#### 2. Start the Application
-To launch the app on an emulator or a physical device:
-```bash
-flutter run
-```
-
----
-
-### 🌐 GitHub Deployment Steps
-
-#### Steps to upload to GitHub:
-1. Create a new repository on your GitHub account.
-2. Open the terminal in your local project folder and execute:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: Mini Catalog App project completed"
-   git branch -M main
-   git remote add origin https://github.com/H-ERDEM/flutter-mini-catalog.git
-   git push -u origin main
-   ```
+### 🛠️ Setup
+1. `flutter pub get`
+2. `flutter run`
