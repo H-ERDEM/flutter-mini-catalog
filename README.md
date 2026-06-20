@@ -51,28 +51,42 @@ Bu proje sonunda aşağıdaki teknik yetkinlikler elde edilmiştir:
 *   Modern Mobil UI/UX tasarımı uygulama.
 
 ---
-### 📁 Proje dizin yapısı
 
-Mobil-staj/
+
+### 📂 Proje Dizin Yapısı
+
+```text
+flutter-mini-catalog/
+├── android/                     # Android platform dosyaları
 ├── assets/
-│   └── products.json          # 30+ ürünün bulunduğu veri seti
+│   └── products.json            # 30+ ürün içeren veri seti
 ├── img/
-│   └── Screenshot_...         # Uygulama ekran görüntüleri
+│   └── Screenshot_...           # Uygulama ekran görüntüleri
+├── ios/                         # iOS platform dosyaları
 ├── lib/
-│    ├── data/
-│    │   └── product_data.dart # JSON yükleme ve global sepet yönetimi
-│    ├── models/
-│    │   └── product.dart      # Ürün veri modeli (fromJson/toJson)
-│    ├── screens/
-│    │   ├── home_screen.dart  # Ana Sayfa (Arama & GridView)
-│    │   ├── product_detail_screen.dart # Ürün Detay Sayfası
-│    │   └── cart_screen.dart  # Sepet ve Ödeme Sayfası
-│    ├── widgets/
-│    │   ├── product_card.dart # Grid ürün kartı bileşeni
-│    │   └── search_bar_widget.dart # Arama çubuğu bileşeni
-│    └── main.dart             # Uygulama giriş noktası ve Rotalar
-├── pubspec.yaml               # Paket ve Asset tanımlamaları
-└── README.md                  # Proje dökümantasyonu (TR/EN)
+│   ├── data/
+│   │   └── product_data.dart    # JSON yükleme ve global sepet yönetimi
+│   ├── models/
+│   │   └── product.dart         # Ürün veri modeli (fromJson/toJson)
+│   ├── screens/
+│   │   ├── home_screen.dart     # Ana Sayfa (Arama & GridView)
+│   │   ├── product_detail_screen.dart # Ürün Detay Sayfası
+│   │   └── cart_screen.dart     # Sepet ve Ödeme Sayfası
+│   ├── widgets/
+│   │   ├── product_card.dart    # Ürün kartı bileşeni
+│   │   └── search_bar_widget.dart # Arama çubuğu bileşeni
+│   └── main.dart                # Uygulama giriş noktası ve yönlendirmeler
+├── linux/                       # Linux platform dosyaları
+├── macos/                       # macOS platform dosyaları
+├── test/                        # Widget ve birim testleri
+├── web/                         # Web platform dosyaları
+├── windows/                     # Windows platform dosyaları
+├── .gitignore
+├── analysis_options.yaml        # Dart analizör yapılandırması
+├── pubspec.yaml                 # Bağımlılıklar ve asset tanımlamaları
+├── pubspec.lock                 # Bağımlılık kilit dosyası
+└── README.md                    # Proje dokümantasyonu
+```
 
 ---
 
@@ -128,28 +142,40 @@ The following technical skills were gained through this project:
 * Implementation of modern Mobile UI/UX design principles.
 ---
 
-### 📁 Project Structure
+### 📂 Project Structure
 
-Mini-Catalog-App/
+```text
+flutter-mini-catalog/
+├── android/                     # Android platform files
 ├── assets/
-│   └── products.json                # Dataset containing 30+ products
+│   └── products.json            # Dataset containing 30+ products
 ├── img/
-│   └── Screenshot_...               # Application screenshots
+│   └── Screenshot_...           # Application screenshots
+├── ios/                         # iOS platform files
 ├── lib/
 │   ├── data/
-│   │   └── product_data.dart        # JSON loading and global cart management
+│   │   └── product_data.dart    # JSON loading and global cart management
 │   ├── models/
-│   │   └── product.dart             # Product data model (fromJson/toJson)
+│   │   └── product.dart         # Product data model (fromJson/toJson)
 │   ├── screens/
-│   │   ├── home_screen.dart         # Home Screen (Search & GridView)
+│   │   ├── home_screen.dart     # Home Screen (Search & GridView)
 │   │   ├── product_detail_screen.dart # Product Details Screen
-│   │   └── cart_screen.dart         # Shopping Cart & Checkout Screen
+│   │   └── cart_screen.dart     # Shopping Cart & Checkout Screen
 │   ├── widgets/
-│   │   ├── product_card.dart        # Product card component for GridView
-│   │   └── search_bar_widget.dart   # Search bar component
-│   └── main.dart                    # Application entry point and routes
-├── pubspec.yaml                     # Package dependencies and asset declarations
-└── README.md                        # Project documentation (TR/EN)
+│   │   ├── product_card.dart    # Product card component
+│   │   └── search_bar_widget.dart # Search bar component
+│   └── main.dart                # Application entry point and routes
+├── linux/                       # Linux platform files
+├── macos/                       # macOS platform files
+├── test/                        # Widget and unit tests
+├── web/                         # Web platform files
+├── windows/                     # Windows platform files
+├── .gitignore
+├── analysis_options.yaml        # Dart analyzer configuration
+├── pubspec.yaml                 # Dependencies and asset declarations
+├── pubspec.lock                 # Dependency lock file
+└── README.md                    # Project documentation
+```
 
 ---
 
