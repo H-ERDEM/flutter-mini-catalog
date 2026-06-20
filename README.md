@@ -51,6 +51,30 @@ Bu proje sonunda aşağıdaki teknik yetkinlikler elde edilmiştir:
 *   Modern Mobil UI/UX tasarımı uygulama.
 
 ---
+### 📁 Proje dizin yapısı
+
+Mobil-staj/
+├── assets/
+│   └── products.json          # 30+ ürünün bulunduğu veri seti
+├── img/
+│   └── Screenshot_...         # Uygulama ekran görüntüleri
+├── lib/
+│    ├── data/
+│    │   └── product_data.dart # JSON yükleme ve global sepet yönetimi
+│    ├── models/
+│    │   └── product.dart      # Ürün veri modeli (fromJson/toJson)
+│    ├── screens/
+│    │   ├── home_screen.dart  # Ana Sayfa (Arama & GridView)
+│    │   ├── product_detail_screen.dart # Ürün Detay Sayfası
+│    │   └── cart_screen.dart  # Sepet ve Ödeme Sayfası
+│    ├── widgets/
+│    │   ├── product_card.dart # Grid ürün kartı bileşeni
+│    │   └── search_bar_widget.dart # Arama çubuğu bileşeni
+│    └── main.dart             # Uygulama giriş noktası ve Rotalar
+├── pubspec.yaml               # Paket ve Asset tanımlamaları
+└── README.md                  # Proje dökümantasyonu (TR/EN)
+
+---
 
 ### 🛠️ Kurulum ve Çalıştırma
 
@@ -102,6 +126,31 @@ The following technical skills were gained through this project:
 * Navigation between screens and safe data transfer using Navigator.
 * Asset management (images and JSON files) and project folder organization.
 * Implementation of modern Mobile UI/UX design principles.
+---
+
+### 📁 Project Structure
+
+Mini-Catalog-App/
+├── assets/
+│   └── products.json                # Dataset containing 30+ products
+├── img/
+│   └── Screenshot_...               # Application screenshots
+├── lib/
+│   ├── data/
+│   │   └── product_data.dart        # JSON loading and global cart management
+│   ├── models/
+│   │   └── product.dart             # Product data model (fromJson/toJson)
+│   ├── screens/
+│   │   ├── home_screen.dart         # Home Screen (Search & GridView)
+│   │   ├── product_detail_screen.dart # Product Details Screen
+│   │   └── cart_screen.dart         # Shopping Cart & Checkout Screen
+│   ├── widgets/
+│   │   ├── product_card.dart        # Product card component for GridView
+│   │   └── search_bar_widget.dart   # Search bar component
+│   └── main.dart                    # Application entry point and routes
+├── pubspec.yaml                     # Package dependencies and asset declarations
+└── README.md                        # Project documentation (TR/EN)
+
 ---
 
 ### 🛠️ Installation & Setup
